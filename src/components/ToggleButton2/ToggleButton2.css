@@ -1,0 +1,56 @@
+.btn-toggle2 {
+  margin: 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20px;
+
+  padding: 0px;
+  border: 3px solid #dddddd;
+  border-radius: 5px;
+  min-width: 80px;
+  font-size: 14px;
+  outline: none;
+}
+.btn-toggle2>.btn-toggle-background{
+  height: 10px;
+}
+
+.btn-toggle2>.overlay{
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  z-index: 5;
+  border: 2px white solid;
+  position: absolute;
+  background-color: rgb(50, 51, 50);
+
+  transition: transform 0.2s ease-out;
+
+}
+
+.btn-toggle2.true>.overlay{
+  transform: translate(-30px);
+}
+
+.btn-toggle2.false>.overlay{
+  transform: translate(30px);
+}
+
+.btn-toggle2.true>.btn-toggle-background{
+  background-color: rgba(39, 189, 39, 0.637);
+}
+
+.btn-toggle2.false>.btn-toggle-background{
+  background-color: rgba(255, 0, 0, 0.466);
+}
+
+.btn-toggle2>div{
+  flex-grow: 1;
+  padding: 2px;
+}
+
+.btn-toggle2:hover {
+  cursor: pointer;
+}

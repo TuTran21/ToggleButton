@@ -1,0 +1,43 @@
+.btn-toggle {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 0px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  min-width: 150px;
+  font-size: 14px;
+  outline: none;
+}
+
+.btn-toggle>.overlay{
+  height: 100%;
+  z-index: 5;
+  width: 50%;
+  position: absolute;
+
+  transition: transform 0.5s ease-out;
+
+  border-radius: 5px;
+}
+
+.btn-toggle.true>.overlay{
+  transform: translate(-38px);
+  background-color: rgba(39, 189, 39, 0.637);
+}
+
+.btn-toggle.false>.overlay{
+  transform: translate(38px);
+  background-color: rgba(255, 0, 0, 0.466);
+}
+
+.btn-toggle>div{
+  flex-grow: 1;
+}
+
+.btn-toggle:hover {
+  cursor: pointer;
+  border: 1px solid #36a579;
+}
