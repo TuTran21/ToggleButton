@@ -3,6 +3,7 @@ This component was created for all purposes in Reactjs, you have permission and 
   1. Customize and use it in your project
   2. Submit improvements and sending feedbacks (optional).
   3. Notify the owner before using it.
+Live preview: https://repl.it/@TuTran21/ToggleButton-Preview
 
 ## Available Scripts
 
