@@ -19,8 +19,6 @@ class ToggleButton extends React.Component {
   }
 
   render() {
-    // const { toggleStateOn, toggleStateOff, toggled } = this.props
-
     return (
       <button className={["btn-toggle", this.state.toggled].join(' ')} onClick={this.handleClick}>
         <div className="overlay"></div>
